@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>walrusBox</title>
+  <link rel="stylesheet" href="walrusBox.css"> <!-- Твоят CSS файл -->
+</head>
+<body>
+
+  <div id="walrusBoxContainer">
+    <div id="walrusBox">
+      <section><img src="img/slider.jpg" loading="eager" alt="Slide 1"></section>
+      <section><img src="img/slider.jpg" loading="eager" alt="Slide 2"></section>
+      <section><img src="img/slider.jpg" alt="Slide 3"></section>
+      <section><img src="img/slider.jpg" alt="Slide 4"></section>
+    </div>
+  </div>
+
+  <script src="walrusBox.js"></script> 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      walrusBox(4, 3000, 'left'); // number of slides, interval, direction
+    });
+  </script>
+</body>
+</html>
