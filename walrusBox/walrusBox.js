@@ -88,4 +88,5 @@ function walrusBox(amount, interval = 5000, direction = 'left') {
     const id = parseInt(current.id, 10);
     box.style.left = `-${(id - 1) * width}px`;
   });
+  
 }

@@ -1,6 +1,7 @@
 
 /* 🔲 Main container */
 #walrusBoxContainer {
+  box-sizing: border-box;
   width: 100%;
   /* тази стойност трябва да съвпада с width, който подавате на walrusBox(width, ...) */
   overflow: hidden;
@@ -18,7 +19,7 @@
 }
 
 /* 🧱 Every slide inside #walrusBox */
-#walrusBox > section  {
+ section  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,9 @@
 }
 
 img{border: 10px #5897d9 ridge;}
+@media screen and (max-width: 653px){
+  img{border: none;}
+}
 
 /* ⚪ The container for the circles (triggers) */
 #walrusBoxTriggers {
